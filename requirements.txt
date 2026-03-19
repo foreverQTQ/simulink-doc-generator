@@ -1,0 +1,17 @@
+# Simulink 文档生成器依赖
+# 核心依赖
+python-docx>=0.8.11      # Word 文档生成
+lxml>=4.9.0              # XML 解析（比标准库更快）
+
+# 可选依赖
+jinja2>=3.1.0            # 模板引擎
+graphviz>=0.20.0        # 信号流图生成（需要安装 Graphviz）
+Pillow>=9.0.0            # 图片处理
+
+# 打包工具（开发时使用）
+pyinstaller>=5.0.0       # 打包成 exe
+
+# 注意：
+# 1. tkinter 是 Python 标准库，无需安装
+# 2. graphviz 需要单独安装 Graphviz 软件（https://graphviz.org/download/）
+# 3. 打包时会包含所有依赖，离线可用
